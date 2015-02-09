@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main()
+{
+int a[6] = {8,2,4,9,3,6};
+int i,j,key;
+
+for(j=1;j<6;j++)
+{
+i=j-1;
+key = a[j];
+while(i>=0 && a[i]>key)
+{
+a[i+1] = a[i];
+i = i-1;
+}
+a[i+1] = key;
+}
+
+for(i=0;i<6;i++)
+{
+printf("%d  ",a[i]);
+}
+printf("\n");
+return 0;
+}
