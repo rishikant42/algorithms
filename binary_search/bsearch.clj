@@ -1,6 +1,3 @@
-(ns binary-search.core
-  (:gen-class))
-
 (defn bsearch1
   [k list]
   (if (= (count list) 1)
