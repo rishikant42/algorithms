@@ -3,10 +3,11 @@
 int main() {
   int a[8] = {8, 2, 6, 4, 3, 1, 7, 5};
   int i, j, k, tmp;
+  int size = sizeof(a) / sizeof(int);
 
-  for(i=0;i<8;i++) {
-    for(j=0;j<8;j++) {
-      if (j+1 < 8 && a[j] > a[j+1]) {
+  for(i=0;i<size;i++) {
+    for(j=0;j<size-i;j++) {
+      if (j+1 < size && a[j] > a[j+1]) {
         tmp = a[j];
         a[j] = a[j+1];
         a[j+1] = tmp;
@@ -15,7 +16,7 @@ int main() {
     }
   }
 
-  for(i=0;i<8;i++)
+  for(i=0;i<size;i++)
     printf("%d\n", a[i]);
 
   return 0;
