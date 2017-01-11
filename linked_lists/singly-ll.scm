@@ -47,3 +47,11 @@
           ((eq? (car items) data) #t)
           (else (helper (cdr items)))))
   (helper (head-ptr ll)))
+
+
+(define (front-delete ll data)
+  (cond ((empty-ll? ll) (error "DELETE called with an empty linkde list" ll))
+        ((not (search ll data)) (error "Item is not present in list" ll))
+        ((eq? (first-item ll) data) (set-head-ptr! ll (cdr (head-ptr ll)))
+                                    ll)
+        (else (display "Given item must be at front of list"))))
