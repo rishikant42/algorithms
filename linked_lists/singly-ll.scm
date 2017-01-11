@@ -40,3 +40,10 @@
       (begin (set-cdr! (rear-ptr ll) new-pair)
              (set-rear-ptr! ll new-pair)
              ll))))
+
+(define (search ll data)
+  (define (helper items)
+    (cond ((null? items) #f)
+          ((eq? (car items) data) #t)
+          (else (helper (cdr items)))))
+  (helper (head-ptr ll)))
