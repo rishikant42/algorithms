@@ -10,8 +10,8 @@ Source code is written in different programming languages like **C, C++, Python,
 
 ### Some Useful Links:
 
--- **CLRS:** https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm
--- **Skiena's Algo**: http://mimoza.marmara.edu.tr/~msakalli/cse706_12/SkienaTheAlgorithmDesignManual.pdf
+- **CLRS:** https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/index.htm
+- **Skiena's Algo**: http://mimoza.marmara.edu.tr/~msakalli/cse706_12/SkienaTheAlgorithmDesignManual.pdf
 
 ---
 ### ToDO:
