@@ -1,5 +1,5 @@
-x = 'AGGTABrishi'
-y = 'agGTAbkant'
+x = 'GeeksforGeeks'
+y = 'GeeksQuiz'
 
 n = len(x)
 m = len(y)

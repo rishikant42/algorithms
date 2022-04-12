@@ -6,21 +6,19 @@ result=[]
 
 def integer_to_roman(num):
     res = ""
-    for divisor in divisors:
-        if num in divisors:
-            res = mapping[num]
-            rem = 0
-            break
-        if divisor < num:
-            quo = num // divisor
-            rem = num % divisor
-            res = res + mapping[divisor] * quo
-            break
+    if num in divisors:
+        res = res + mapping[num]
+        rem = 0
+    else:
+        for divisor in divisors:
+            if divisor < num:
+                quo = num // divisor
+                rem = num % divisor
+                res = res + mapping[divisor] * quo
+                break
 
     result.append(res)
-    if rem == 0:
-        pass
-    else:
+    if rem != 0:
         integer_to_roman(rem)
 
 integer_to_roman(3549)

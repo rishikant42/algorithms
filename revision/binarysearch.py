@@ -45,4 +45,4 @@ def binary_search_arr_split(arr, x):
 
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-print(binary_search_arr_split(arr, 7))
+print(binary_search_recursive(arr, 0, 9, 8))

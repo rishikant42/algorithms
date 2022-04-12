@@ -12,7 +12,7 @@ class Graph:
 
         queue = [s]
 
-        visited = {s}
+        visited = [s]
 
         while(queue):
 
@@ -22,10 +22,10 @@ class Graph:
             for neighbour in self.graph[s]:
                 if neighbour not in visited:
                     queue.append(neighbour)
-                    visited.add(neighbour)
+                    visited.append(neighbour)
 
     def DFSUtil(self, s, visited):
-        visited.add(s)
+        visited.append(s)
         print(s, end=' ')
 
         for neigbour in self.graph[s]:
@@ -33,7 +33,7 @@ class Graph:
                 self.DFSUtil(neigbour, visited)
 
     def DFS(self, s):
-        visited = set()
+        visited = []
         self.DFSUtil(s, visited)
 
 
