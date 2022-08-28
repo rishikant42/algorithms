@@ -17,4 +17,4 @@ root.right = Node(3)
 root.left.left = Node(4)
 root.left.right = Node(5)
 
-print(size(root.left))
+print(size(root))
