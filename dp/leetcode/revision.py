@@ -69,15 +69,37 @@ class LinkedList:
             print(current.data)
             current = current.next
 
-arr = [1, 2, 3, 4, 5]
+def bubblesort(arr):
+    n = len(arr)
+    for i in range(n):
+        for j in range(n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
+
+def print_decorator(fn):
+    def wrapper(*args, **kwrags):
+        print('start')
+        fn(*args, **kwrags)
+        print('end')
+    return wrapper
+
+@print_decorator
+def hello(x, y):
+    print('hello world', x+y)
+#arr = [1, 2, 3, 4, 5]
 #print(rev_arr(arr, 5))
 #print(rev_arr2(arr))
 #print(rev_str("hello", 5))
 #print(ispallindrome("abccb"))
 #print(bsearch(arr, 6))
 
-ll = LinkedList()
-ll.insert(1)
-ll.insert(2)
-ll.insert(2)
-ll.printLL()
+# ll = LinkedList()
+# ll.insert(1)
+# ll.insert(2)
+# ll.insert(2)
+# ll.printLL()
+# arr = [2, 7, 1, 5, 3, 4, 6]
+# bubblesort(arr)
+# print(arr)
+hello(2, 3)
