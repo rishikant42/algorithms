@@ -1,6 +1,6 @@
 # Algorithms and Data structures
 
-## Overview:
+### Overview:
 
 This repo contains implemention basic algorithms and data structures.
 
